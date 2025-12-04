@@ -3,47 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Students</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container" style="margin: 10%">
-      <button
-        onclick="window.location.href='create.html'"
-        type="button"
-        class="btn btn-success"
-      >
-        Create new +
-      </button>
 
-      <table class="table">
+  <body>
+    <div class="container mt-5">
+
+      <div class="d-flex justify-content-between mb-3">
+        <h2>Students List</h2>
+        <a href="create.html" class="btn btn-success">Create New +</a>
+      </div>
+
+      <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Surname</th>
-            <th scope="col">Father Name</th>
-            <th scope="col">Profile Photo Link</th>
-            <th scope="col">Age</th>
-            <th scope="col">Grade</th>
-            <th scope="col">Bio</th>
-            <th scope="col">Update</th>
-            <th scope="col">Delete</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Father</th>
+            <th>Photo</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Bio</th>
+            <th>Update</th>
+            <th>Delete</th>
           </tr>
         </thead>
+
+        <tbody id="tableBody"></tbody>
       </table>
+
     </div>
 
-    <script src="get.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </body>
 </html>

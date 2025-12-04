@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(student),
   }).then((res) => {
     if (res.ok) {
-      alert("Student created!");
+      alert("Telebe yarandi!");
       window.location.href = "index.html";
     } else {
       alert("Xəta baş verdi!");
